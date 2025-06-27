@@ -246,3 +246,4 @@ C:\Users\E010447\OneDrive - Coforge Limited\Desktop 1\MoneyMap\api\obj\Debug\net
 C:\Users\E010447\OneDrive - Coforge Limited\Desktop 1\MoneyMap\api\obj\Debug\net8.0\api.csproj.Up2Date
 C:\Users\E010447\OneDrive - Coforge Limited\Desktop 1\MoneyMap\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 C:\Users\E010447\OneDrive - Coforge Limited\Desktop 1\MoneyMap\api\obj\Debug\net8.0\ref\api.dll
+C:\Users\E010447\OneDrive - Coforge Limited\Desktop 1\MoneyMap\api\obj\Debug\net8.0\api.sourcelink.json
