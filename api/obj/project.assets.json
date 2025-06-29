@@ -3317,19 +3317,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\E010447\\.nuget\\packages\\": {}
+    "C:\\Users\\Sneha.T\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\E010447\\OneDrive - Coforge Limited\\Desktop 1\\MoneyMap\\api\\api.csproj",
+      "projectUniqueName": "D:\\OneDrive - Coforge Limited\\Desktop 1\\Finsharp\\FinsharpApp\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\E010447\\OneDrive - Coforge Limited\\Desktop 1\\MoneyMap\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\E010447\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\E010447\\OneDrive - Coforge Limited\\Desktop 1\\MoneyMap\\api\\obj\\",
+      "projectPath": "D:\\OneDrive - Coforge Limited\\Desktop 1\\Finsharp\\FinsharpApp\\api\\api.csproj",
+      "packagesPath": "C:\\Users\\Sneha.T\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive - Coforge Limited\\Desktop 1\\Finsharp\\FinsharpApp\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\E010447\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sneha.T\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

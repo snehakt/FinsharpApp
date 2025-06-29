@@ -7,6 +7,7 @@ using api.Models;
 using api.Data;
 using Microsoft.EntityFrameworkCore;
 using api.Dto.Comment;
+using api.Helpers;
 
 namespace api.Repository
 {
@@ -17,8 +18,16 @@ namespace api.Repository
         {
             _context=context;
         }
-        public async Task<List<Comment>> GetAllAsync(){
-            return await _context.Comments.Include(a=>a.AppUser).ToListAsync();
+        public async Task<List<Comment>> GetAllAsync(CommentQueryObject queryObject){
+            var comments=  _context.Comments.Include(a=>a.AppUser).AsQueryable();
+            if(!string.IsNullOrWhiteSpace(queryObject.Symbol)){
+                comments= comments.Where(s=>s.Stock.Symbol ==queryObject.Symbol);
+            }
+if(queryObject.IsDescending==true){
+    comments = comments.OrderByDescending(c=>c.CreatedOn);
+}
+
+            return await comments.ToListAsync();
         }
 
        public async Task<Comment?> GetByIDAsync(int id){

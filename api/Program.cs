@@ -15,6 +15,7 @@ using System.Text;
 using api.Models;
 using api.Service;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Builder; 
 
 
 
@@ -100,7 +101,8 @@ builder.Services.AddScoped<IStockRepository,StockRepository>();
 builder.Services.AddScoped<ICommentRepository,CommentRepository>();
 builder.Services.AddScoped<ITokenService,TokenService>();
 builder.Services.AddScoped<IPortfolioRepository,PortfolioRepository>();
-
+builder.Services.AddScoped<IFMPService,FMPService>();
+builder.Services.AddHttpClient<IFMPService,FMPService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -111,6 +113,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(x=>x
+.AllowAnyMethod()
+.AllowAnyHeader()
+.AllowCredentials()
+//.WithOriginal("https"//localhost:44351))
+.SetIsOriginAllowed(origin=>true));
 
 app.UseAuthentication();
 app.UseAuthorization();
